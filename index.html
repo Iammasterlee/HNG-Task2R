@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Portfolio</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navigation" role="navigation" aria-label="Main navigation">
+        <a href="#profile" class="logo">
+           
+            <span>ChristLee</span>
+        </a>
+        
+        <div class="nav-menu">
+            <a href="#profile" class="nav-item active" data-page="profile" aria-current="page">
+                <i class="fas fa-user"></i>
+                Profile
+            </a>
+            <a href="#contact" class="nav-item" data-page="contact">
+                <i class="fas fa-envelope"></i>
+                Contact
+            </a>
+            <a href="#about" class="nav-item" data-page="about">
+                <i class="fas fa-info-circle"></i>
+                About
+            </a>
+        </div>
+        
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <div class="mobile-nav-header">
+            <h2 class="mobile-nav-title">Menu</h2>
+            <button class="close-btn" id="closeBtn" aria-label="Close navigation menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-nav-items">
+            <a href="#profile" class="mobile-nav-item active" data-page="profile" aria-current="page">
+                <i class="fas fa-user"></i>
+                Profile
+            </a>
+            <a href="#contact" class="mobile-nav-item" data-page="contact">
+                <i class="fas fa-envelope"></i>
+                Contact
+            </a>
+            <a href="#about" class="mobile-nav-item" data-page="about">
+                <i class="fas fa-info-circle"></i>
+                About
+            </a>
+        </div>
+    </div>
+    
+    <!-- Overlay for mobile navigation -->
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="page-container">
+        <!-- Profile Page -->
+        <div id="profile" class="page active" data-testid="test-profile-page">
+            <main id="main-content">
+                <article class="profile-card" data-testid="test-profile-card">
+                    <header class="card-header">
+                        <h1 class="user-name" data-testid="test-user-name">Emiloju Abegunde Lukuman</h1>
+                        <p class="user-time" data-testid="test-user-time"></p>
+                    </header>
+                    
+                    <section class="main-content">
+                        <div class="photo-section">
+                            <figure class="avatar-container">
+                                <img 
+                                    src="my.jpg" 
+                                    alt="Profile picture of Emiloju" 
+                                    class="avatar"
+                                    data-testid="test-user-avatar"
+                                >
+                                <button 
+                                    class="avatar-upload-btn" 
+                                    aria-label="Change avatar"
+                                    data-testid="test-avatar-upload-btn"
+                                >
+                                    <i class="fas fa-camera"></i>
+                                </button>
+                            </figure>
+                        </div>
+                        
+                        <div class="bio-section">
+                            <p class="user-bio" data-testid="test-user-bio">
+                                I'm a passionate web developer with a love for creating beautiful, accessible, and responsive user interfaces. When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good book with a cup of coffee.
+                            </p>
+                            
+                            <div class="social-section">
+                                <h2 class="social-title">
+                                    <i class="fas fa-share-alt"></i>
+                                    Connect with me
+                                </h2>
+                                <nav class="social-links" data-testid="test-user-social-links" aria-label="Social media links">
+                                   <a 
+                                href="https://x.com/LEmiloju4626?t=ppH4lmVdNlOF3wNxLUeEvQ&s=08" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="social-link"
+                                data-testid="test-user-social-twitter"
+                                aria-label="Twitter profile"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a 
+                                href="https://github.com/Iammasterlee" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="social-link"
+                                data-testid="test-user-social-github"
+                                aria-label="GitHub profile"
+                            >
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a 
+                                href="https://www.linkedin.com/in/lukuman-emiloju-2b1355111/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="social-link"
+                                data-testid="test-user-social-linkedin"
+                                aria-label="LinkedIn profile"
+                            >
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <div class="lists-container">
+                        <section class="list-section">
+                            <h2 class="list-title">
+                                <i class="fas fa-heart"></i>
+                                Hobbies
+                            </h2>
+                            <ul class="list-items" data-testid="test-user-hobbies">
+                                <li class="list-item">Web Development</li>
+                                <li class="list-item">Watching Movies</li>
+                               
+                                <li class="list-item">Reading</li>
+                                <li class="list-item">Cooking</li>
+                            </ul>
+                        </section>
+                        
+                        <section class="list-section">
+                            <h2 class="list-title">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                Dislikes
+                            </h2>
+                            <ul class="list-items" data-testid="test-user-dislikes">
+                                <li class="list-item">Spam Emails</li>
+                                <li class="list-item">Slow Loading Sites</li>
+                                <li class="list-item">Bad UX Design</li>
+                                <li class="list-item">Infinite Scrolling</li>
+                                <li class="list-item">Pop-up Ads</li>
+                            </ul>
+                        </section>
+                    </div>
+                </article>
+            </main>
+        </div>
+        
+        <!-- Contact Page -->
+        <div id="contact" class="page" data-testid="test-contact-page">
+            <main id="main-content">
+                <div class="contact-form">
+                    <header class="form-header">
+                        <h1 class="form-title">Contact Us</h1>
+                        <p class="form-subtitle">We'd love to hear from you!</p>
+                    </header>
+                    
+                    <!-- Working Form that sends to masterleeman@gmail.com -->
+                    <form 
+                        id="contactForm" 
+                        name="contact" 
+                        method="POST" 
+                        novalidate
+                    >
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Full Name</label>
+                            <input 
+                                type="text" 
+                                id="contactName" 
+                                name="name"
+                                class="form-input" 
+                                data-testid="test-contact-name"
+                                aria-describedby="nameError"
+                                placeholder="Enter your full name (e.g., John Smith)"
+                                required
+                            >
+                            <div id="nameError" class="form-error" data-testid="test-contact-error-name">
+                                Please enter your full name
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input 
+                                type="email" 
+                                id="contactEmail" 
+                                name="email"
+                                class="form-input" 
+                                data-testid="test-contact-email"
+                                aria-describedby="emailError"
+                                placeholder="Enter your email address (e.g., john@example.com)"
+                                required
+                            >
+                            <div id="emailError" class="form-error" data-testid="test-contact-error-email">
+                                Please enter a valid email address
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input 
+                                type="text" 
+                                id="contactSubject" 
+                                name="subject"
+                                class="form-input" 
+                                data-testid="test-contact-subject"
+                                aria-describedby="subjectError"
+                                placeholder="Enter the subject of your message (e.g., Project Inquiry)"
+                                required
+                            >
+                            <div id="subjectError" class="form-error" data-testid="test-contact-error-subject">
+                                Please enter a subject
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea 
+                                id="contactMessage" 
+                                name="message"
+                                class="form-textarea" 
+                                data-testid="test-contact-message"
+                                aria-describedby="messageError"
+                                placeholder="Enter your message here (minimum 10 characters required)"
+                                required
+                            ></textarea>
+                            <div id="messageError" class="form-error" data-testid="test-contact-error-message">
+                                Please enter a message (at least 10 characters)
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="form-submit" data-testid="test-contact-submit">
+                            Send Message
+                        </button>
+                        
+                        <div id="successMessage" class="form-success" data-testid="test-contact-success">
+                            <i class="fas fa-check-circle"></i> Thank you for your message! We'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+        
+        <!-- About Page -->
+        <div id="about" class="page" data-testid="test-about-page">
+            <main id="main-content">
+                <div class="about-container">
+                    <header class="about-header">
+                        <h1 class="about-title">About Me</h1>
+                        <p class="about-subtitle">My Journey and Reflections</p>
+                    </header>
+                    
+                    <section class="about-section">
+                        <h2 class="about-section-title">
+                            <i class="fas fa-user-circle"></i>
+                            Bio
+                        </h2>
+                        <div class="about-content" data-testid="test-about-bio">
+                            <p>
+                               I'm an aspiring professional frontend developer. I am pssionte about making it big in tech via turning ideas into interactive, responsive web interfaces. I am really open to continuous learning in order to achieve my goal. Thanks HNG for this opportunity for me to be good and employable.
+                            </p>
+                            <p>
+                                I specialize in frontend development with expertise in HTML, CSS, and JavaScript, along with modern frameworks like React, Next.js, Tailwindcss and Vue. I believe in writing clean, maintainable code and creating experiences that delight users while meeting business goals.
+                            </p>
+                        </div>
+                    </section>
+                    
+                    <section class="about-section">
+                        <h2 class="about-section-title">
+                            <i class="fas fa-bullseye"></i>
+                            Goals in this Program
+                        </h2>
+                        <div class="about-content" data-testid="test-about-goals">
+                            <p>
+                                Through this program, I aim to deepen my understanding of advanced web development concepts and enhance my skills in creating more complex and interactive applications. My specific goals include:
+                            </p>
+                            <ul>
+                                <li>Mastering advanced JavaScript patterns and best practices</li>
+                                <li>Improving my skills in responsive design and accessibility</li>
+                                <li>Learning backend development to become a full-stack developer</li>
+                                <li>Building a portfolio of projects that showcase my abilities</li>
+                                <li>Connecting with other developers and contributing to open-source projects</li>
+                            </ul>
+                        </div>
+                    </section>
+                    
+                    <section class="about-section">
+                        <h2 class="about-section-title">
+                            <i class="fas fa-exclamation-circle"></i>
+                            Areas of Low Confidence
+                        </h2>
+                        <div class="about-content" data-testid="test-about-confidence">
+                            <p>
+                                While I'm confident in many areas of web development, there are still areas where I feel I need improvement:
+                            </p>
+                            <ul>
+                                <li>Backend development and database management</li>
+                                <li>Advanced algorithms and data structures</li>
+                                <li>System design and architecture for large-scale applications</li>
+                                <li>DevOps and deployment strategies</li>
+                                <li>Testing methodologies and frameworks</li>
+                            </ul>
+                            <p>
+                                I'm actively working on these areas through online courses, personal projects, and seeking mentorship from experienced developers.
+                            </p>
+                        </div>
+                    </section>
+                    
+                    <section class="about-section">
+                        <h2 class="about-section-title">
+                            <i class="fas fa-envelope-open-text"></i>
+                            Note to Future Self
+                        </h2>
+                        <div class="about-content" data-testid="test-about-future-note">
+                            <p>
+                                Dear Future Self,
+                            </p>
+                            <p>
+                                I hope you've continued to grow and learn since I wrote this. Remember to always stay curious and never stop exploring new technologies. Don't be afraid to step out of your comfort zone and tackle challenges that seem impossible at first.
+                            </p>
+                            <p>
+                                Most importantly, remember why you started this journey - your passion for creating things that make a difference. Whether you're working on a small personal project or a large-scale application, bring the same enthusiasm and dedication to every line of code.
+                            </p>
+                            <p>
+                                Keep learning, keep growing, and never lose sight of your goals. The future is bright, and you have the power to shape it.
+                            </p>
+                            <p>
+                                With love and determination,<br>
+                                Your past self
+                            </p>
+                        </div>
+                    </section>
+                    
+                    <section class="about-section">
+                        <h2 class="about-section-title">
+                            <i class="fas fa-lightbulb"></i>
+                            Extra Thoughts
+                        </h2>
+                        <div class="about-content" data-testid="test-about-extra">
+                            <p>
+                                Beyond the technical skills, I believe that being a great developer is also about mindset and approach. I strive to:
+                            </p>
+                            <ul>
+                                <li>Embrace failure as a learning opportunity</li>
+                                <li>Collaborate effectively with team members</li>
+                                <li>Communicate clearly with both technical and non-technical stakeholders</li>
+                                <li>Balance work with personal well-being</li>
+                                <li>Contribute back to the developer community through mentoring and knowledge sharing</li>
+                            </ul>
+                            <p>
+                                I'm excited about the future of web development and look forward to being part of the innovations that will shape how we interact with technology in the years to come.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Avatar Upload Modal -->
+    <div class="modal" id="avatarModal" data-testid="test-avatar-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Change Avatar</h2>
+                <button class="close-modal-btn" id="closeModal" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="upload-options">
+                <div class="upload-option">
+                    <h3><i class="fas fa-upload"></i> Upload from Device</h3>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="fileInput" accept="image/*" data-testid="test-file-input">
+                        <label for="fileInput" class="file-input-label">Choose File</label>
+                    </div>
+                    <p id="fileName" style="margin-top: 10px; color: var(--text-muted);"></p>
+                </div>
+                <div class="upload-option">
+                    <h3><i class="fas fa-link"></i> Or Enter Image URL</h3>
+                    <input 
+                        type="url" 
+                        id="urlInput" 
+                        class="url-input" 
+                        placeholder="https://example.com/image.jpg"
+                        data-testid="test-url-input"
+                    >
+                    <button id="urlSubmit" class="submit-btn" data-testid="test-url-submit">Use URL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+   
+</body>
+</html>

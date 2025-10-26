@@ -85,7 +85,7 @@ Validation rules:
 
 🔗 Live Link
 
-[View Live Project] https://cute-lily-02856c.netlify.app/
+[View Live Project] https://lucky-choux-edab29.netlify.app/
 
 How to Run Locally
 
